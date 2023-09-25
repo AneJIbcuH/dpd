@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useRoute} from "vue-router";
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
 </script>
@@ -16,6 +16,4 @@ const route = useRoute()
   </RouterView>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
