@@ -1,1 +1,1 @@
-window.API = 'api.url'
+window.API = 'https://jsonplaceholder.typicode.com'

@@ -1,6 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { axiosInstance } from '@/utils/axios/axios.ts'
+
+const getSome = async () => {
+  const res = await axiosInstance.get('/todos/2')
+  console.log(res.data)
+}
+</script>
 <template>
-  <div>123123</div>
+  <div>
+    <button @click="getSome">click</button>
+  </div>
 </template>
 
 <style scoped></style>

@@ -1,4 +1,3 @@
-// @ts-ignore
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -15,7 +14,6 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          //@ts-ignore
           if (id.includes('node_modules')) {
             return id
               .toString()
