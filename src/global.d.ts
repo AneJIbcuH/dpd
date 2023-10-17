@@ -8,5 +8,8 @@ declare module '*.vue' {
 declare global {
   interface Window {
     API: string
+    CEF: boolean
+    TIMEOUT: number
+    IS_DEV: boolean
   }
 }

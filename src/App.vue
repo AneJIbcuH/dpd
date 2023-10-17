@@ -5,11 +5,11 @@ const route = useRoute()
 </script>
 
 <template>
-  <RouterView v-slot="{ Component }" :key="route.fullPath">
+  <RouterView v-slot="{ Component }">
     <template v-if="Component">
       <transition name="fade-page" mode="out-in">
         <suspense>
-          <component :is="Component"></component>
+          <component :is="Component" :key="route.fullPath"></component>
         </suspense>
       </transition>
     </template>
