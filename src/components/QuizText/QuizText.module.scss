@@ -1,0 +1,38 @@
+.quiztext {
+    border-radius: 10px;
+    width: 450px;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    h2 {
+        margin: 0;
+    }
+
+    button {
+        width: 200px;
+        background: #DC0032;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        height: 30px;
+        margin-top: 5px;
+
+        &:hover {
+            cursor: pointer;
+            color: black;
+            background: #ffa2a2;
+        }
+
+        &:active {
+            color: white;
+        }
+    }
+
+    &__quest {
+        color: gray;
+        margin-right: auto;
+    }
+}
