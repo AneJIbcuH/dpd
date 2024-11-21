@@ -1,0 +1,20 @@
+@import '../src/assets/scss/variables.scss';
+
+.button {
+    width: 460px;
+    height: 97px;
+    border-radius: 16px;
+    border: none;
+    font-size: 40px;
+    color: $black;
+    background: $white;
+  }
+  
+  .button-primary-red {
+    color: $white;
+    background: $primary-red;
+  }
+  
+  .button-small {
+    width: 428px;
+  }

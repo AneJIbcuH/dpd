@@ -1,14 +1,8 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import router from './router'
+import router from './router/router'
 import App from './App.vue'
-import VClickOutside from '@/directives/vClickOutside'
-import vRipple from '@/directives/vRipple'
-import '@/assets/scss/main.scss'
 
-const app = createApp(App)
-  .directive('ripple', vRipple)
-  .directive('outside', VClickOutside)
-  .use(createPinia())
-  .use(router)
-  .mount('#app')
+import '@/assets/scss/style.scss'
+
+ createApp(App).use(createPinia()).use(router).mount('#app')

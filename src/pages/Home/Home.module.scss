@@ -1,0 +1,32 @@
+@import '/src/assets/scss/variables.scss';
+
+.home {
+    background-image: url('../logos/bg1.png');
+    background-size: cover;
+    width: $Width;
+    height: $Height;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-image {
+    width: 952px;
+    height: 890px;
+}
+
+.home-text {
+    font-size: 64px;
+    color: $white;
+    text-align: center;
+    width: 952px;
+    margin-top: 191px;
+}
+
+.home-text2 {
+    font-size: 72px;
+    color: $white-D9;
+    text-align: center;
+    width: 952px;
+    margin-bottom: 100px;
+}

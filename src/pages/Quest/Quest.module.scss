@@ -1,0 +1,26 @@
+@import '/src/assets/scss/variables.scss';
+
+.quest {
+    background-image: url('../logos/bg2.png');
+    background-size: cover;
+    width: $Width;
+    height: $Height;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quest-image {
+    margin-top: auto;
+
+    img {
+        width: $Width;
+        height: 800px;
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 64px;
+    margin-top: 191px;
+}

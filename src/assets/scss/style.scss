@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'fonts';
+@import 'null';
+
+body{
+    font-family: 'PlutoSans';
+}
+
+.wrapper {
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $black;
+}

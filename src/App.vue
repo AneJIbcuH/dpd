@@ -1,19 +1,10 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { RouterView } from "vue-router";
 
-const route = useRoute()
 </script>
 
 <template>
-  <RouterView v-slot="{ Component }">
-    <template v-if="Component">
-      <transition name="fade-page" mode="out-in">
-        <suspense>
-          <component :is="Component" :key="route.fullPath"></component>
-        </suspense>
-      </transition>
-    </template>
-  </RouterView>
+    <div class="wrapper">
+        <RouterView />
+    </div>
 </template>
-
-<style scoped></style>
